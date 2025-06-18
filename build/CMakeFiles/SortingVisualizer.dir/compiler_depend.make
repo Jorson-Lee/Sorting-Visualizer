@@ -163,6 +163,7 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o: /home/jorsonlee0112/src/sorting
   /usr/include/c++/15/bits/basic_string.tcc \
   /usr/include/c++/15/bits/char_traits.h \
   /usr/include/c++/15/bits/charconv.h \
+  /usr/include/c++/15/bits/chrono.h \
   /usr/include/c++/15/bits/codecvt.h \
   /usr/include/c++/15/bits/concept_check.h \
   /usr/include/c++/15/bits/cpp_type_traits.h \
@@ -194,6 +195,7 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o: /home/jorsonlee0112/src/sorting
   /usr/include/c++/15/bits/ostream.h \
   /usr/include/c++/15/bits/ostream.tcc \
   /usr/include/c++/15/bits/ostream_insert.h \
+  /usr/include/c++/15/bits/parse_numbers.h \
   /usr/include/c++/15/bits/postypes.h \
   /usr/include/c++/15/bits/predefined_ops.h \
   /usr/include/c++/15/bits/ptr_traits.h \
@@ -201,6 +203,7 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o: /home/jorsonlee0112/src/sorting
   /usr/include/c++/15/bits/refwrap.h \
   /usr/include/c++/15/bits/requires_hosted.h \
   /usr/include/c++/15/bits/std_abs.h \
+  /usr/include/c++/15/bits/std_thread.h \
   /usr/include/c++/15/bits/stl_algo.h \
   /usr/include/c++/15/bits/stl_algobase.h \
   /usr/include/c++/15/bits/stl_bvector.h \
@@ -213,6 +216,7 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o: /home/jorsonlee0112/src/sorting
   /usr/include/c++/15/bits/stl_map.h \
   /usr/include/c++/15/bits/stl_multimap.h \
   /usr/include/c++/15/bits/stl_pair.h \
+  /usr/include/c++/15/bits/stl_relops.h \
   /usr/include/c++/15/bits/stl_tempbuf.h \
   /usr/include/c++/15/bits/stl_tree.h \
   /usr/include/c++/15/bits/stl_uninitialized.h \
@@ -222,7 +226,9 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o: /home/jorsonlee0112/src/sorting
   /usr/include/c++/15/bits/streambuf_iterator.h \
   /usr/include/c++/15/bits/string_view.tcc \
   /usr/include/c++/15/bits/stringfwd.h \
+  /usr/include/c++/15/bits/this_thread_sleep.h \
   /usr/include/c++/15/bits/uniform_int_dist.h \
+  /usr/include/c++/15/bits/unique_ptr.h \
   /usr/include/c++/15/bits/uses_allocator.h \
   /usr/include/c++/15/bits/uses_allocator_args.h \
   /usr/include/c++/15/bits/utility.h \
@@ -230,9 +236,11 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o: /home/jorsonlee0112/src/sorting
   /usr/include/c++/15/bits/version.h \
   /usr/include/c++/15/cctype \
   /usr/include/c++/15/cerrno \
+  /usr/include/c++/15/chrono \
   /usr/include/c++/15/clocale \
   /usr/include/c++/15/concepts \
   /usr/include/c++/15/cstddef \
+  /usr/include/c++/15/cstdint \
   /usr/include/c++/15/cstdio \
   /usr/include/c++/15/cstdlib \
   /usr/include/c++/15/ctime \
@@ -251,6 +259,7 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o: /home/jorsonlee0112/src/sorting
   /usr/include/c++/15/ios \
   /usr/include/c++/15/iosfwd \
   /usr/include/c++/15/iterator \
+  /usr/include/c++/15/limits \
   /usr/include/c++/15/locale \
   /usr/include/c++/15/map \
   /usr/include/c++/15/new \
@@ -258,14 +267,17 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o: /home/jorsonlee0112/src/sorting
   /usr/include/c++/15/pstl/execution_defs.h \
   /usr/include/c++/15/pstl/glue_algorithm_defs.h \
   /usr/include/c++/15/pstl/pstl_config.h \
+  /usr/include/c++/15/ratio \
   /usr/include/c++/15/stdexcept \
   /usr/include/c++/15/streambuf \
   /usr/include/c++/15/string \
   /usr/include/c++/15/string_view \
   /usr/include/c++/15/system_error \
+  /usr/include/c++/15/thread \
   /usr/include/c++/15/tuple \
   /usr/include/c++/15/type_traits \
   /usr/include/c++/15/typeinfo \
+  /usr/include/c++/15/utility \
   /usr/include/c++/15/vector \
   /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h \
@@ -445,8 +457,6 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_base.h:
 
-/usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h:
-
 /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h:
@@ -455,7 +465,11 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/c++/15/vector:
 
+/usr/include/c++/15/utility:
+
 /usr/include/c++/15/tuple:
+
+/usr/include/c++/15/thread:
 
 /usr/include/c++/15/string_view:
 
@@ -464,6 +478,24 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 /usr/include/c++/15/streambuf:
 
 /usr/include/c++/15/stdexcept:
+
+/usr/include/c++/15/ratio:
+
+/usr/include/c++/15/pstl/pstl_config.h:
+
+/usr/include/c++/15/pstl/execution_defs.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/15/new:
+
+/usr/include/c++/15/map:
+
+/usr/include/c++/15/locale:
+
+/usr/include/c++/15/limits:
+
+/usr/include/c++/15/iterator:
 
 /usr/include/bits/types/__fpos_t.h:
 
@@ -524,6 +556,12 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 /usr/include/SFML/System/Sleep.hpp:
 
 /usr/include/asm/bitsperlong.h:
+
+/usr/include/c++/15/pstl/glue_algorithm_defs.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/c++/15/bits/charconv.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -603,11 +641,9 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/SFML/Window/Touch.hpp:
 
-/usr/include/sys/cdefs.h:
+/usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h:
 
-/usr/include/c++/15/debug/assertions.h:
-
-/usr/include/SFML/Graphics/RenderTexture.hpp:
+/usr/include/c++/15/bits/chrono.h:
 
 /usr/include/SFML/Config.hpp:
 
@@ -621,6 +657,14 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/SFML/System/String.hpp:
 
+/usr/include/sys/cdefs.h:
+
+/usr/include/c++/15/debug/assertions.h:
+
+/usr/include/SFML/Graphics/RenderTexture.hpp:
+
+/usr/include/c++/15/bits/std_thread.h:
+
 /usr/include/SFML/System/ThreadLocalPtr.hpp:
 
 /usr/include/linux/posix_types.h:
@@ -628,8 +672,6 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 /usr/include/SFML/Graphics/Text.hpp:
 
 /usr/include/bits/types/FILE.h:
-
-/usr/include/SFML/Graphics/Rect.inl:
 
 /usr/include/c++/15/bits/stl_pair.h:
 
@@ -643,10 +685,6 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/SFML/Graphics/Texture.hpp:
 
-/usr/include/linux/errno.h:
-
-/usr/include/c++/15/new:
-
 /home/jorsonlee0112/src/sorting-visualizer/src/main.cpp:
 
 /usr/include/SFML/Window/VideoMode.hpp:
@@ -656,8 +694,6 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 /usr/include/SFML/Graphics/RectangleShape.hpp:
 
 /usr/include/bits/types/time_t.h:
-
-/usr/include/c++/15/iterator:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
@@ -713,8 +749,6 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/SFML/System/Vector3.hpp:
 
-/usr/include/c++/15/bits/stl_algobase.h:
-
 /usr/include/c++/15/clocale:
 
 /usr/include/asm-generic/errno.h:
@@ -739,8 +773,6 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/SFML/Graphics/Image.hpp:
 
-/usr/include/c++/15/locale:
-
 /usr/include/asm-generic/int-ll64.h:
 
 /usr/include/SFML/Window/WindowBase.hpp:
@@ -757,11 +789,11 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/SFML/System/Mutex.hpp:
 
+/usr/include/SFML/Graphics/Rect.inl:
+
+/usr/include/c++/15/bits/parse_numbers.h:
+
 /usr/include/SFML/System/NonCopyable.hpp:
-
-/usr/lib64/libX11.so.6:
-
-/usr/include/bits/stdint-least.h:
 
 /usr/include/c++/15/bits/move.h:
 
@@ -772,6 +804,8 @@ SortingVisualizer: /lib64/ld-linux-x86-64.so.2 \
 /usr/include/c++/15/bits/streambuf_iterator.h:
 
 /usr/include/SFML/Window/Window.hpp:
+
+/usr/include/c++/15/bits/unique_ptr.h:
 
 /usr/include/SFML/Graphics/Shader.hpp:
 
@@ -825,6 +859,10 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o:
 
 /usr/include/c++/15/bits/localefwd.h:
 
+/usr/include/c++/15/bits/stl_algobase.h:
+
+/usr/include/c++/15/bits/stl_relops.h:
+
 /usr/include/bits/types/struct_timeval.h:
 
 /usr/include/c++/15/bits/concept_check.h:
@@ -855,12 +893,6 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o:
 
 /usr/include/c++/15/bits/algorithmfwd.h:
 
-/usr/include/bits/types/clock_t.h:
-
-/usr/include/c++/15/bits/charconv.h:
-
-/usr/include/c++/15/pstl/glue_algorithm_defs.h:
-
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/15/bit:
@@ -885,7 +917,13 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o:
 
 /usr/include/c++/15/bits/cxxabi_forced.h:
 
-/usr/include/c++/15/map:
+/usr/include/c++/15/ostream:
+
+/usr/include/SFML/Graphics/Transformable.hpp:
+
+/usr/include/SFML/Graphics/View.hpp:
+
+/usr/include/c++/15/bits/exception.h:
 
 /usr/lib64/libsfml-window.so.2.6.2:
 
@@ -1019,11 +1057,21 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o:
 
 /usr/include/c++/15/bits/stringfwd.h:
 
+/usr/lib64/libX11.so.6:
+
+/usr/include/bits/stdint-least.h:
+
+/usr/include/c++/15/bits/this_thread_sleep.h:
+
 /usr/include/c++/15/bits/uniform_int_dist.h:
 
 /usr/include/c++/15/bits/vector.tcc:
 
+/usr/include/c++/15/chrono:
+
 /usr/include/c++/15/concepts:
+
+/usr/include/c++/15/cstdint:
 
 /usr/include/c++/15/cstdio:
 
@@ -1038,15 +1086,3 @@ CMakeFiles/SortingVisualizer.dir/src/main.cpp.o:
 /usr/include/c++/15/ext/string_conversions.h:
 
 /usr/include/c++/15/iosfwd:
-
-/usr/include/SFML/Graphics/Transformable.hpp:
-
-/usr/include/SFML/Graphics/View.hpp:
-
-/usr/include/c++/15/bits/exception.h:
-
-/usr/include/c++/15/ostream:
-
-/usr/include/c++/15/pstl/execution_defs.h:
-
-/usr/include/c++/15/pstl/pstl_config.h:

@@ -3,9 +3,13 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
 #include <SFML/Window/VideoMode.hpp>
+#include <utility>
 #include <vector>
 #include <cstdlib>
 #include <ctime>
+#include <thread>   // std::this_thread::sleep_for
+#include <chrono>   // std::chrono::milliseconds
+
 int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Sorting Visualizer");
 
@@ -21,7 +25,9 @@ int main() {
     const float barWidth = 30.f;
     const float gap = 5.f;
 
-    //open window,keep checking if it's 'close' event
+    int i = 0, j = 0;
+    bool sorted = false;
+    //main sorting loop
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -29,20 +35,50 @@ int main() {
                 window.close();
             }
         }
+        if (!sorted) {
+            if (i < numBars) {
+                if (j < numBars - i - 1) {
+                    if (values[j] > values[j + 1]) {
+                        std::swap(values[j], values[j + 1]);
+                    }
+                    j++;
+                } else {
+                    i++;
+                    j = 0;
+                }
+            } else {
+                sorted = true;
+            }
+        }
+        //畫面更新
         window.clear(sf::Color::Black);
 
-        //Draw every bar
-        for (int i = 0; i < numBars; i++) {
-            sf::RectangleShape bar(sf::Vector2f(barWidth, static_cast<float>(values[i])));
-            bar.setFillColor(sf::Color::Green);
 
+        //Draw every bar
+        for (int k = 0; k < numBars; k++) {
+            sf::RectangleShape bar(sf::Vector2f(barWidth, static_cast<float>(values[k])));
+            // 決定顏色順序：藍色 > 紅色 > 綠色
+            if (k == numBars - i - 1 && !sorted) {
+                // 已確定排好、剛冒泡完成的最大值
+                bar.setFillColor(sf::Color::Blue);
+            } else if (k == j || k == j + 1) {
+                // 目前正在比較的兩個元素
+                bar.setFillColor(sf::Color::Red);
+            } else {
+                // 其他
+                bar.setFillColor(sf::Color::Green);
+            }
             // bar 的位置：x 軸間隔排列，y 軸是從底部往上畫 (所以要往上偏移bar的高度)
-            bar.setPosition(i * (barWidth + gap), 600 - values[i]);
+            bar.setPosition(k * (barWidth + gap), 600 - values[k]);
 
             window.draw(bar);
         }
         window.display();
+
+        // 每步動畫延遲（控制速度）
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
+
 
     return 0;
 }
