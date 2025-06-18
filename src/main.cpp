@@ -61,7 +61,7 @@ int main() {
             if (k == numBars - i - 1 && !sorted) {
                 // 已確定排好、剛冒泡完成的最大值
                 bar.setFillColor(sf::Color::Blue);
-            } else if (k == j || k == j + 1) {
+            } else if (k == j || (k == j + 1 && k < numBars - i - 1)) {
                 // 目前正在比較的兩個元素
                 bar.setFillColor(sf::Color::Red);
             } else {

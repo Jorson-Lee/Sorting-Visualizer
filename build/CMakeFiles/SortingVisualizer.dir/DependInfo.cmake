@@ -8,16 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jorsonlee0112/src/sorting-visualizer/src/main.cpp" "CMakeFiles/SortingVisualizer.dir/src/main.cpp.o" "gcc" "CMakeFiles/SortingVisualizer.dir/src/main.cpp.o.d"
-  "" "SortingVisualizer" "gcc" "CMakeFiles/SortingVisualizer.dir/link.d"
+  "/home/jorsonlee0112/dev/Sorting-Visualizer/src/main.cpp" "CMakeFiles/SortingVisualizer.dir/src/main.cpp.o" "gcc" "CMakeFiles/SortingVisualizer.dir/src/main.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
